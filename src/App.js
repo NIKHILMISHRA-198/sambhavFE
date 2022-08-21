@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import Login from "./Pages/Login";
 import RegisterForm from "./Pages/Register";
 import CreateProduct from "./Pages/Admin/createProduct";
+import Education from "./Pages/Education.js";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/createproduct" element={<CreateProduct />} />
+          <Route path="/education" element={<Education />} />
 
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<RegisterForm />} />
