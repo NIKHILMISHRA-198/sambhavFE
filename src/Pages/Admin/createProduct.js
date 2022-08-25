@@ -1,17 +1,17 @@
 import { Box, FormControl, Text, VStack } from "native-base";
-import React, { useEffect, useState } from "react";
-const axios = require("axios");
+import React, { useState } from "react";
+// const axios = require("axios");
 
 function CreateProduct() {
-  const categories = [
-    "Home-Decoration",
-    "Footwear",
-    "Clothing Accessories",
-    "Cleaning Material",
-    "Edibles",
-    "Clothing",
-    "Mask",
-  ];
+  // const categories = [
+  //   "Home-Decoration",
+  //   "Footwear",
+  //   "Clothing Accessories",
+  //   "Cleaning Material",
+  //   "Edibles",
+  //   "Clothing",
+  //   "Mask",
+  // ];
   const [productData, setProductData] = useState({
     productName: "",
     productDescription: "",

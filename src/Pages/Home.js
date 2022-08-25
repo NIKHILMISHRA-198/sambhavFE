@@ -98,7 +98,12 @@ function Home() {
         </Text>
         <Center>
           {/* <Text fontSize={"3xl"}>Popular in your Area:</Text> */}
-          <Box flex={"auto"} flexDir={["col", "row", "row"]} flexWrap={"wrap"}>
+          <Box
+            width={"100%"}
+            flex={"auto"}
+            flexDir={["col", "row", "row"]}
+            flexWrap={"wrap"}
+          >
             <Card />
           </Box>
         </Center>
