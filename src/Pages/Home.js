@@ -66,7 +66,7 @@ function Home() {
                 uri: "https://pmjandhanyojana.co.in/wp-content/uploads/2015/11/self-help-group-accounts.jpg",
               }}
               alt={"banner image here"}
-              borderRadius={"100"}
+              //={"100"}
               size="md"
             />
             <Text textAlign={"center"} fontWeight={"medium"} fontSize={"lg"}>
@@ -80,7 +80,7 @@ function Home() {
                 uri: "https://pmjandhanyojana.co.in/wp-content/uploads/2015/11/self-help-group-accounts.jpg",
               }}
               alt={"banner image here"}
-              borderRadius={"100"}
+              //={"100"}
               size="md"
             />
             <Text textAlign={"center"} fontWeight={"medium"} fontSize={"lg"}>

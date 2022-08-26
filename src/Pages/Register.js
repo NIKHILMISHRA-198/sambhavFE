@@ -18,6 +18,10 @@ function RegisterForm() {
     name: "",
     email: "",
     password: "",
+    shgId: "",
+    city: "",
+    phoneNo: "",
+    role: "",
   });
 
   const handleChange = (e) => {
@@ -30,6 +34,11 @@ function RegisterForm() {
       name: data.name,
       email: data.email,
       password: data.password,
+      phoneNo: data.phoneNo,
+      city: data.city,
+      role: data.role,
+      shgId: data.id,
+      // role: data.role,
     };
     axios
       .post("http://localhost:4000/api/v1/register", userData)
@@ -107,13 +116,22 @@ function RegisterForm() {
                 <VStack space={3} mt="5">
                   <FormControl>
                     <form onSubmit={handleSubmit}>
-                      <FormControl.Label>Name</FormControl.Label>
+                      <FormControl.Label>SHG Name</FormControl.Label>
                       <input
                         className="formInput"
                         type="text"
                         name="name"
                         value={data.name}
                         placeholder="enter your name"
+                        onChange={handleChange}
+                      />
+                      <FormControl.Label>SHG ID</FormControl.Label>
+                      <input
+                        className="formInput"
+                        type="text"
+                        name="id"
+                        value={data.id}
+                        placeholder="Please enter your SHG ID"
                         onChange={handleChange}
                       />
                       <FormControl.Label>email</FormControl.Label>
@@ -132,11 +150,36 @@ function RegisterForm() {
                         placeholder="password bata"
                         onChange={handleChange}
                       />
+                      <FormControl.Label>PhoneNo:</FormControl.Label>
+                      <input
+                        type="tel"
+                        name="phoneNo"
+                        value={data.phoneNo}
+                        placeholder="Please enter your phone Number"
+                        onChange={handleChange}
+                      />
+                      <FormControl.Label>City</FormControl.Label>
+                      <input
+                        type="text"
+                        name="city"
+                        value={data.city}
+                        placeholder="Enter your city"
+                        onChange={handleChange}
+                      />
+                      <FormControl.Label>
+                        Check the box to register as a SHG:
+                      </FormControl.Label>
+                      Role:
+                      <input
+                        type="checkbox"
+                        id="role"
+                        name="role"
+                        value={data.role}
+                      />
                       <FormControl.Label>
                         {" "}
                         <input type="submit" value="register" />
                       </FormControl.Label>
-
                       {/* <Button
                       mt="2"
                       backgroundColor={"#EEB71C"}

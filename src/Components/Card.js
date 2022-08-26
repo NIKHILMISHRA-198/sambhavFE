@@ -3,10 +3,11 @@ import React, { useEffect, useState } from "react";
 const axios = require("axios");
 
 function Card({ prod }) {
-  const [product, setProduct] = useState(["lnull"]);
+  const [product, setProduct] = useState(["null"]);
   useEffect(() => {
     axios.get("http://localhost:4000/api/v1/products").then((res) => {
       setProduct(res.data.products);
+      // console.log();
     });
   }, []);
 
@@ -14,6 +15,8 @@ function Card({ prod }) {
     <Box flex={"auto"} flexDir={["col", "row", "row"]} flexWrap={"wrap"}>
       {product.map((prod) => (
         <div key={prod._id}>
+          {console.log(prod._id)}
+          {console.log(prod.images)}
           <Box
             border="2"
             borderRadius="md"
@@ -25,8 +28,11 @@ function Card({ prod }) {
               <Box>
                 <img
                   // src={prod.images[0].url}
+                  // src={
+                  //   "https://m.media-amazon.com/images/I/61Om749rKlL._SX679_.jpg"
+                  // }
                   width={["100%"]}
-                  alt={"alt"}
+                  alt={prod.name}
                   height="250"
                 />
               </Box>
