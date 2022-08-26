@@ -55,11 +55,14 @@ function Header() {
           <Text bold>Products</Text>
         </Link>
         <Link to="/education">
-          <Text bold>SHG Info</Text>
+          <Text bold>Education</Text>
         </Link>
         {/* <Link to="/contactUs">
           <Text bold>Contact Us</Text>
         </Link> */}
+        <Link to="/collab">
+          <Text bold>Collaborate</Text>
+        </Link>
         <Link to="/login">
           <Text bold>Register</Text>
         </Link>

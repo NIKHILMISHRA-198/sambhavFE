@@ -10,7 +10,8 @@ import Login from "./Pages/Login";
 import RegisterForm from "./Pages/Register";
 import CreateProduct from "./Pages/Admin/CreateProduct";
 import Education from "./Pages/Education.js";
-import ProductDetails from "./Pages/ProductDetails.js";
+import ProductDetails1 from "./Pages/ProductDetails1.js";
+import ProductDetails2 from "./Pages/ProductDetails2.js";
 import SHGDetails from "./Pages/SHGDetails.js";
 import Collaboration from "./Pages/Collaboration";
 import Advanced from "./CollaborationCard/CollabCard";
@@ -44,14 +45,14 @@ function App() {
         <div id="google_translate_element"> </div>
         <Routes>
           <Route path="/" element={<Home />} />
-
           <Route path="/createproduct" element={<CreateProduct />} />
           <Route path="/collaborate" element={<Collaboration />} />
           <Route path="/education" element={<Education />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<RegisterForm />} />
           {/* product pages */}
-          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/productDetails/1" element={<ProductDetails1 />} />
+          <Route path="/productDetails/2" element={<ProductDetails2 />} />
           <Route path="/products" element={<Products />} />
 
           <Route path="/shgdetails" element={<SHGDetails />} />

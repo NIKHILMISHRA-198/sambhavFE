@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Text, HStack, Heading, Image, Button, VStack } from "native-base";
-function ProductDetails() {
+import Card from "../Components/Card";
+function ProductDetails2() {
   return (
     <Box>
       {/* Start of Page */}
@@ -70,37 +71,34 @@ function ProductDetails() {
             width={"300"}
             height={"300"}
             source={{
-              uri: "https://res.cloudinary.com/ipwesix/image/upload/v1658830810/cld-sample-5.jpg",
+              uri: "https://m.media-amazon.com/images/I/71U9glopeDL._SL1500_.jpg",
             }}
             alt="Alternate Text"
           />
           <Box marginLeft={"170"} width={"60%"}>
             <VStack>
               <Text bold fontSize={"60"}>
-                SHG Shoes 3
+                Himachali Chilli
               </Text>
               <Text fontSize={"16"} italic marginTop={"15"}>
-                These white open SHG Shoes shoes give you all the comfort of SHG
-                Shoes but with the cushioning support of a running shoe. The
-                dual straps adjust to keep your feet secure, and the velcro
-                fasteners make this shoe a breeze to put on and take off. A shoe
-                is an item of footwear intended to protect and comfort the human
-                foot. Shoes are also used as an item of decoration and fashion.
-                The design of shoes has varied enormously through time and from
-                culture to culture, with form originally being tied to function.
+                Made with EXTRA VIRGIN OLIVE OIL & Spicy Chilli, Peppers Sauce.
+                Ideal For Pasta & Pizza. No Sugar, Gluten Free, 100% Natural
+                ingredients. Product of Italy. NUTRIENTS: Prepared like
+                home-made Italian recipe, contains all natural ingredients, NO
+                ADDED PRESERVATIVES. Suitable for Vegetarian, Vegan and Gluten
+                Free users.
               </Text>
               <Text fontSize={"16"} italic marginTop={"5"}>
-                Material Used: Indian Jute found in Dhoka Forest near Kolapur,
-                Alibhag, UP
+                Material Used: Home made candle wastes
               </Text>
               <Text marginTop={"10"} fontSize={"20"} italic>
-                Indian Shoes was made by{" "}
+                These Himachali Chillis are made by
                 <Text bold color="#7BC5E2">
-                  Divya SHG
+                  Bhavya SHG
                 </Text>
                 , Indore on{" "}
                 <Text bold color={"#7BC5E2"}>
-                  12 May, 2022
+                  16 June, 2022
                 </Text>
               </Text>
               <HStack marginTop={"10"}>
@@ -114,7 +112,7 @@ function ProductDetails() {
                   marginLeft={"4"}
                 >
                   <Text color={"black"} bold>
-                    10
+                    mini
                   </Text>
                 </Button>
                 <Button
@@ -124,7 +122,7 @@ function ProductDetails() {
                   marginLeft={"2"}
                 >
                   <Text color={"black"} bold>
-                    9
+                    Small
                   </Text>
                 </Button>
                 <Button
@@ -134,7 +132,7 @@ function ProductDetails() {
                   marginLeft={"2"}
                 >
                   <Text color={"black"} bold>
-                    8
+                    med
                   </Text>
                 </Button>
                 <Button
@@ -144,12 +142,12 @@ function ProductDetails() {
                   marginLeft={"2"}
                 >
                   <Text color={"black"} bold>
-                    7
+                    Large
                   </Text>
                 </Button>
               </HStack>
 
-              <HStack marginTop={"10"}>
+              {/* <HStack marginTop={"10"}>
                 <Text bold marginTop={"2"} fontSize={"18"}>
                   Color
                 </Text>
@@ -193,11 +191,11 @@ function ProductDetails() {
                     Green
                   </Text>
                 </Button>
-              </HStack>
+              </HStack> */}
 
               <HStack>
                 <Text bold fontSize={"40"} paddingTop={"50"}>
-                  ₹ 800
+                  ₹ 550
                 </Text>
                 <Button
                   borderRadius={10}
@@ -213,10 +211,16 @@ function ProductDetails() {
             </VStack>
           </Box>
         </HStack>
+        <Box paddingTop={"32"} margin={6}>
+          <Text bold fontSize={"2xl"}>
+            More Products of your Interest:
+          </Text>
+          <Card />
+        </Box>
       </Box>
       {/* End of page */}
     </Box>
   );
 }
 
-export default ProductDetails;
+export default ProductDetails2;
